@@ -1,6 +1,6 @@
 # Bienvenido a la Barberia Alura por Analia Aguirre
 
-###### Proyecto final realizado desde cero durante los cursos 1, 2, 3 y 4 de HTML y CSS, con un total de 32hs de carga horaria.
+##### Proyecto final realizado desde cero durante los cursos 1, 2, 3 y 4 de HTML y CSS, con un total de 32hs de carga horaria.
 
 ##### Certificados obtenidos por el proyecto aprobado: 
 https://app.aluracursos.com/certificate/analiaaguirre/html5-css3-primera-pagina-web
