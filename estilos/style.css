@@ -259,17 +259,36 @@ td, th {
     content:"★"
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:1024px){
     h1{
         text-align: center;
     }
     nav{
         position: static;
     }
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+    .caja, .principal, .mapa, .mapa-contenido, .contenido-diferenciales, .video{
         width: auto;
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
+    }
+    .productos, .productos li{
+        width: auto;
+        display: block;
+        margin: 12.5% auto;
+    }
+    .formulario{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:940px){
+    .formulario{
+        width: 100%;
+        margin: auto;
+    }
+    form {
+        margin: 40px 0;
+        padding: 0px 0px 0px 30px;
     }
 }
