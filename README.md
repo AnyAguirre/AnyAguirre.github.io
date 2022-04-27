@@ -12,7 +12,7 @@ https://app.aluracursos.com/certificate/analiaaguirre/html5-css3-avanzando-css
 Resumen: Web de barberia con 3 secciones, Home, Visualizacion de productos y Contacto, a lo largo del proyecto utilizamos API de ubicacion de Google Maps y Consumo de un video de Youtube.
 
 
-## Pagina: https://anyaguirre.github.io/BarberiaAlura-Oracle
+## [Visualizacion](https://anyaguirre.github.io/BarberiaAlura-Oracle)
 
 
 
