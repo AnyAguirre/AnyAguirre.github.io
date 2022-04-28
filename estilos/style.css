@@ -1,26 +1,44 @@
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
 header {
     background-color: #BBBBBB;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+    width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 nav{
-    position: absolute;
-    top:110px;
-    right: 0;
+    width:50%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav li{
     display: inline;
     margin: 0 0 0 15px;
+    margin:0;
 }
 
 
@@ -28,31 +46,51 @@ nav a{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
+    transition: all 450ms;
 }
+
+
 
 nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
 
+main{
+    padding:  0 15px;
+    background: linear-gradient(#FEFEFE, #888888);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .productos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 .productos li{
     display: inline-block;
     text-align: center;
     width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
+    min-width: 280px;
+
+    margin: 5px 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px 25px 40px 50px;
+}
+
+.productos li img{
+    width: 100%;
+    margin:  5px 0;
+    border-radius:  5px;
 }
 
 .productos li:hover{
@@ -96,8 +134,26 @@ footer{
 
 
 form{
+    width: 80%;
+    max-width:  440px;
     margin: 40px 0;
-    padding: 0px 0px 0px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea{
+    outline: none;
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  5px;
+    text-align: center;
 }
 
 form label, form p{
@@ -111,6 +167,13 @@ form label, form p{
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    min-width: 315px;
+}
+
+.radio-container{
+    width: 100%;
+    text-align: start;
+    
 }
 
 .checkbox{
@@ -120,8 +183,9 @@ form label, form p{
 
 .enviar{
     width: 40%;
+    min-width: 150px;
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color:white;
     background: rgb(119, 113, 101);
@@ -136,8 +200,8 @@ form label, form p{
     transform: scale(1.2);
 }
 
-table {
-    margin: 40px 40px;
+table{
+    width: 50%;
 }
 
 thead {
@@ -149,6 +213,7 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+    width: 150px;
 }
 
 /*CSS DEL HOME */
@@ -159,7 +224,7 @@ td, th {
 
 .titulo-principal{
     text-align: center;
-    font-size: 2em;
+    font-size: 22px;
     margin: 0 0 1em;
     clear:left;
 }
@@ -211,12 +276,18 @@ td, th {
 
 .contenido-diferenciales {
     width: 640px;
-    margin: 0 auto;
+   /* margin: 0 auto;*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  flex-wrap: wrap;
+   padding: 15px
 }
 
 .lista-diferenciales {
     width: 40%;
     display: inline-block;
+    align-self: flex-start;
     vertical-align: top;
 }
 
@@ -229,6 +300,7 @@ td, th {
 }
 
 .imagen-diferenciales{
+    margin: 10px 0;
     width: 60%;
     transition: 400ms;
     box-shadow: 5px 5px 15px 10px #000000;
@@ -240,19 +312,21 @@ td, th {
 
 .mapa-contenido {
     width: 940px;
+    
     margin: 0 auto;
 }
 
 .principal {
     padding: 3em 0;
-    background: #FEFEFE;
+   /* background: #FEFEFE;*/
     width: 940px;
     margin: 0 auto;
 }
 
 .mapa {
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
+
+    margin: 0 0 15px 0;
+    
 }
 
 .items:before{
@@ -266,17 +340,17 @@ td, th {
     nav{
         position: static;
     }
-    .caja, .principal, .mapa, .mapa-contenido, .contenido-diferenciales, .video{
+    .principal, .mapa, .mapa-contenido, .contenido-diferenciales, .video{
         width: auto;
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }
-    .productos, .productos li{
+   /* .productos, .productos li{
         width: auto;
         display: block;
         margin: 12.5% auto;
-    }
+    }*/
     .formulario{
         width: 100%;
         margin: auto;
@@ -289,6 +363,42 @@ td, th {
     }
     form {
         margin: 40px 0;
-        padding: 0px 0px 0px 30px;
+       
+    }
+}
+
+.caja{
+    width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px){
+    .caja{
+        
+       flex-direction: column;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:1183px){
+    .productos{
+        width: 50%;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 50px 0;
     }
 }
